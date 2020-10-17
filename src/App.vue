@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <TodoList/>
+   <div id="app" class="container">
+    <todo-list></todo-list>
   </div>
 </template>
 
@@ -17,12 +17,25 @@ export default {
 </script>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
   margin-top: 60px;
+  font-size: 24px;
+}
+.logo {
+  display: block;
+  margin: 20px auto;
+  height: 75px;
 }
 </style>
